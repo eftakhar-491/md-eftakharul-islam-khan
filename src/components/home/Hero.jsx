@@ -7,7 +7,9 @@ import { Link } from "react-router";
 export default function Hero() {
   return (
     <>
-      <section className="relative font-Bela min-h-[600px] flex items-center ">
+      <section className="max-w-[1240px] mx-auto relative  font-Bela min-h-[600px] flex items-center ">
+        <div className="absolute w-80 h-80 bg-radial from-p/40 -top-44 -right-64 -z-50 to-transparent blur-3xl overflow-hidden rounded-full"></div>
+
         <h1
           style={{
             WebkitTextStroke: "0.6px #5a1899",
@@ -82,14 +84,15 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 ">
             {" "}
-            <div className="rotate-[5deg] hover:rotate-0 transition-all hover:border-2 duration-250 mx-auto w-[350px] h-[350px] rounded-3xl bg-[#111315] border-[0.4px] border-p">
+            <div className="relative  rotate-[5deg]  hover:rotate-0 transition-all hover:border-2 duration-250 mx-auto w-[350px] h-[350px] rounded-3xl bg-[#111315] border-[0.4px] border-p">
               <img
                 src={pp}
                 alt=""
                 className="rounded-3xl w-full h-full object-cover pt-5"
               />
+              <div className="absolute w-80 h-80 bg-radial from-p/20 top-32 -left-24 -z-50 to-transparent blur-3xl rounded-full"></div>
             </div>
           </div>
         </div>
