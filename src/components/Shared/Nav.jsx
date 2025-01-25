@@ -1,12 +1,17 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
-
+import signeture from "../../assets/ss.png";
 export default function Nav() {
   return (
     <>
       <nav>
         <div className="max-w-[1240px] mx-auto flex justify-between items-center py-4 px-[5%] text-white">
-          <h1 className="font-semibold">eftakhar491@gmail.com</h1>
+          <h1 className="font-semibold flex items-center gap-3">
+            {" "}
+            <span className="text-2xl shrink-0 font-Rubik">
+              <img className="h-[50px]" src={signeture} alt="" />
+            </span>{" "}
+          </h1>
           <ul className="flex items-center text-sm space-x-6">
             <NavLink to="/">
               <li>Services</li>
