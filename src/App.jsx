@@ -1,7 +1,11 @@
+import { Outlet } from "react-router";
+import Nav from "./components/Shared/Nav";
+
 function App() {
   return (
     <>
-      <h1 className="text-red-500">testing...</h1>
+      <Nav />
+      <Outlet />
     </>
   );
 }
