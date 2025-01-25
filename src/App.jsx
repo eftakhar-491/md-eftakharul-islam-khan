@@ -1,11 +1,13 @@
 import { Outlet } from "react-router";
 import Nav from "./components/Shared/Nav";
-
+import { HelmetProvider } from "react-helmet-async";
 function App() {
   return (
     <>
-      <Nav />
-      <Outlet />
+      <HelmetProvider>
+        <Nav />
+        <Outlet />
+      </HelmetProvider>
     </>
   );
 }
