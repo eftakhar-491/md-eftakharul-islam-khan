@@ -6,7 +6,7 @@ export default function Nav() {
     <>
       <nav>
         <div className="max-w-[1240px] mx-auto flex justify-between items-center py-4 px-[5%] text-white">
-          <h1 className="font-semibold">mdeftakharulislamkhan@gmail.com</h1>
+          <h1 className="font-semibold">eftakhar491@gmail.com</h1>
           <ul className="flex items-center text-sm space-x-6">
             <NavLink to="/">
               <li>Services</li>

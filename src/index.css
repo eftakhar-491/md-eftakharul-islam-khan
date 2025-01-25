@@ -8,8 +8,23 @@
   --font-Sura: "Sura", "sans-serif";
   --color-p: #7f4bea;
   --color-q: #321962;
+  --animate-zoomout: zoomout 4s ease-in-out infinite;
+  @keyframes zoomout {
+    0%,
+    100% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
 }
 
 body {
   background-color: #0f0715;
+}
+.gradient-text {
+  background: linear-gradient(30deg, #7f4bea, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
