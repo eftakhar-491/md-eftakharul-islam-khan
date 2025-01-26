@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import QualityWork from "./QualityWork";
 import Skills from "./Skills";
 import { Helmet } from "react-helmet-async";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <QualityWork />
       <Skills />
+      <Projects />
     </>
   );
 }

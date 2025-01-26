@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router";
 import signeture from "../../assets/ss.png";
+
 export default function Nav() {
+  const [bgColor, setBgColor] = useState("bg-transparent");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setBgColor(" backdrop-blur-2xl bg-black/70 shadow shadow-q/30"); // Change to the color you want after 700px
+      } else {
+        setBgColor("bg-transparent"); // Default background color
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-      <nav>
+      <nav className={`${bgColor} fixed top-0 left-0 w-full z-50`}>
         <div className="max-w-[1240px] mx-auto flex justify-between items-center py-4 px-[5%] text-white">
           <h1 className="font-semibold flex items-center gap-3">
             {" "}
