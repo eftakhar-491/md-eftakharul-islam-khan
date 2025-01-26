@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { Link } from "react-router";
+import mypic from "../../assets/mypic.jpg";
 export default function Hero() {
   return (
     <>
@@ -86,11 +87,11 @@ export default function Hero() {
           </div>
           <div className="w-1/2 ">
             {" "}
-            <div className="relative  rotate-[5deg]  hover:rotate-0 transition-all hover:border-2 duration-250 mx-auto w-[350px] h-[350px] rounded-3xl bg-[#111315] border-[0.4px] border-p">
+            <div className="relative  rotate-[5deg] overflow-hidden  hover:rotate-0 transition-all hover:border-2 duration-250 mx-auto w-[350px] h-[350px] rounded-3xl bg-[#111315] border-[0.4px] border-p">
               <img
-                src={pp}
+                src={mypic}
                 alt=""
-                className="rounded-3xl w-full h-full object-cover pt-5"
+                className=" rounded-3xl w-full h-full object-cover scale-125 pt-5"
               />
               <div className="absolute w-80 h-80 bg-radial from-p/20 top-32 -left-24 -z-50 to-transparent blur-3xl rounded-full"></div>
             </div>
