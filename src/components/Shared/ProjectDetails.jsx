@@ -1,4 +1,14 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import bg from "../../assets/bg.png";
 import { Link } from "react-router";
 import { SiRefinedgithub } from "react-icons/si";
@@ -16,7 +26,7 @@ export default function ProjectDetails() {
           }}
           className="h-[300px] flex flex-col justify-center items-center"
         >
-          <h1 className="pt-24 text-3xl font-Bela font-semibold text-white">
+          <h1 className=" text-3xl font-Bela font-semibold text-white">
             Project name
           </h1>
           <p className="text-sm mx-auto max-w-[600px] px-4 text-center text-white/70 ">
@@ -31,11 +41,11 @@ export default function ProjectDetails() {
           <div className="bg-q p-12">
             <img
               className="w-full object-cover"
-              src="https://www.elegantthemes.com/blog/wp-content/uploads/2024/05/how-to-make-a-wordpress-portfolio-page-ft-img-3-min.jpg"
+              src="https://i.ibb.co.com/3vGf9mQ/p2.jpg"
               alt=""
             />
           </div>
-          <div className="mt-10 flex justify-between pb-40">
+          <div className="mt-10 flex justify-between ">
             <div className="w-1/2">
               <h1 className="text-3xl font-Bela font-semibold">Name</h1>
               <p className="mb-3 text-sm flex gap-2">
@@ -128,6 +138,53 @@ export default function ProjectDetails() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="max-w-[1240px] mx-auto px-[5%] mt-10 pb-24">
+          <Swiper
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            slidesPerView={2}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            // navigation={true}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper h-64"
+          >
+            <SwiperSlide>
+              <img
+                className="h-full"
+                src="https://i.ibb.co.com/Xx4VMfJ/p1.jpg"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className="h-full"
+                src="https://i.ibb.co.com/3vGf9mQ/p2.jpg"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className="h-full"
+                src="https://i.ibb.co.com/3vGf9mQ/p2.jpg"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className="h-full"
+                src="https://i.ibb.co.com/3vGf9mQ/p2.jpg"
+                alt=""
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
     </>

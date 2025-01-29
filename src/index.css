@@ -43,3 +43,11 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #7f4bea #321962;
 }
+
+.swiper-pagination-bullet {
+  background-color: #7f4bea !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #321962 !important;
+}
