@@ -1,19 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
-export default function ProjectCard() {
+export default function ProjectCard({ data }) {
+  const navigate = useNavigate();
   return (
     <>
       <div className="group shadow-2xl relative overflow-hidden px-4 pt-7 rounded-t-2xl bg-[#140C1C]">
         <div className="px-3">
-          <img
-            className="w-full rounded-t-lg"
-            src="https://i.ibb.co.com/Xx4VMfJ/p1.jpg"
-            alt=""
-          />
+          <img className="w-full rounded-t-lg" src={data?.image[0]} alt="" />
         </div>
-        <div className="cursor-pointer left-0 transition-all duration-250  bg-gradient-to-l p-4 w-full from-q to-p absolute group-hover:block -bottom-22 group-hover:bottom-0 text-white">
+        <div
+          onClick={() => navigate(`/project/${data?.id}`)}
+          className="cursor-pointer left-0 transition-all duration-250  bg-gradient-to-l p-4 w-full from-q to-p absolute group-hover:block -bottom-22 group-hover:bottom-0 text-white"
+        >
           <h1 className=" text-2xl font-Bela flex items-center justify-between">
-            CHRONO CRAFT
+            {data?.name}
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +32,9 @@ export default function ProjectCard() {
               </svg>
             </span>
           </h1>
-          <p className="font-Bela text-[14px]">Project was about -</p>
+          <p className="font-Bela text-[14px]">
+            Project was about - {data?.category}
+          </p>
         </div>
       </div>
     </>

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    fetch("/projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
+  console.log(projects);
   return (
     <>
       <section className=" py-16">
@@ -18,10 +25,9 @@ export default function Projects() {
         <div className="relative grid grid-cols-1 md:grid-cols-2 max-w-[1240px] px-[5%] mx-auto gap-5 mt-10">
           <div className="absolute w-80 h-80 bg-radial from-p/40 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  -z-50 to-transparent blur-3xl overflow-hidden rounded-full"></div>
 
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects?.map((project) => (
+            <ProjectCard key={project.id} data={project} />
+          ))}
         </div>
       </section>
     </>
