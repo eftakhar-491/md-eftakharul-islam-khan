@@ -1,9 +1,20 @@
 import React from "react";
-
+import html from "../../assets/icon/html.png";
+import css from "../../assets/icon/css.png";
+import js from "../../assets/icon/js.png";
+import react from "../../assets/icon/react.png";
+import node from "../../assets/icon/node.png";
+import express from "../../assets/icon/express.png";
+import tailwind from "../../assets/icon/tailwind.png";
+import nx from "../../assets/icon/nx.jpeg";
+import mg from "../../assets/icon/mg.png";
+import git from "../../assets/icon/git.png";
+import types from "../../assets/icon/type.png";
+import boost from "../../assets/icon/boost.png";
 export default function Skills() {
   return (
     <>
-      <section className=" py-16">
+      <section id="skills" className=" py-16">
         <div className="font-Bela">
           <h1 className="gradient-text-heading text-4xl text-center font-semibold">
             My Skills
@@ -14,111 +25,148 @@ export default function Skills() {
             project that inspires you and you customers.{" "}
           </p>
         </div>
-        <div className="flex gap-6 mt-10 items-center justify-center flex-wrap">
+        <div className="flex max-w-[1240px] mx-auto px-[5%] gap-6 mt-10 items-center justify-center flex-wrap">
           <div className="group w-fit">
             <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
               <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma Logo"
-                  className="w-12 h-12"
-                />
+                <img src={html} alt="Figma Logo" className="w-12 h-12" />
               </div>
               <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
-                92%
+                98%
               </p>
             </div>
-            <p className="text-purple-400 text-sm mt-1 text-center">Figma</p>
+            <p className="text-purple-400 text-sm mt-1 text-center">HTML</p>
           </div>
           <div className="group w-fit">
             <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
               <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma Logo"
-                  className="w-12 h-12"
-                />
+                <img src={css} alt="Figma Logo" className="w-12 h-12" />
               </div>
               <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
-                92%
+                95%
               </p>
             </div>
-            <p className="text-purple-400 text-sm mt-1 text-center">Figma</p>
+            <p className="text-purple-400 text-sm mt-1 text-center">CSS</p>
           </div>
           <div className="group w-fit">
             <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
               <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma Logo"
-                  className="w-12 h-12"
-                />
+                <img src={js} alt="Figma Logo" className="w-12 h-12" />
               </div>
               <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
-                92%
+                93%
               </p>
             </div>
-            <p className="text-purple-400 text-sm mt-1 text-center">Figma</p>
+            <p className="text-purple-400 text-sm mt-1 text-center">
+              JavaScript
+            </p>
           </div>
           <div className="group w-fit">
             <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
               <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma Logo"
-                  className="w-12 h-12"
-                />
+                <img src={mg} alt="Figma Logo" className="w-12 h-12" />
               </div>
               <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
-                92%
+                89%
               </p>
             </div>
-            <p className="text-purple-400 text-sm mt-1 text-center">Figma</p>
+            <p className="text-purple-400 text-sm mt-1 text-center">Mongo DB</p>
           </div>
           <div className="group w-fit">
             <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
               <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma Logo"
-                  className="w-12 h-12"
-                />
+                <img src={express} alt="Figma Logo" className="w-12 h-12" />
               </div>
               <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
-                92%
+                91%
               </p>
             </div>
-            <p className="text-purple-400 text-sm mt-1 text-center">Figma</p>
+            <p className="text-purple-400 text-sm mt-1 text-center">
+              Express JS
+            </p>
           </div>
           <div className="group w-fit">
             <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
               <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma Logo"
-                  className="w-12 h-12"
-                />
+                <img src={react} alt="Figma Logo" className="w-12 h-12" />
               </div>
               <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
-                92%
+                95%
               </p>
             </div>
-            <p className="text-purple-400 text-sm mt-1 text-center">Figma</p>
+            <p className="text-purple-400 text-sm mt-1 text-center">React JS</p>
           </div>
           <div className="group w-fit">
             <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
               <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma Logo"
-                  className="w-12 h-12"
-                />
+                <img src={node} alt="Figma Logo" className="w-12 h-12" />
               </div>
               <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
-                92%
+                78%
               </p>
             </div>
-            <p className="text-purple-400 text-sm mt-1 text-center">Figma</p>
+            <p className="text-purple-400 text-sm mt-1 text-center">Node JS</p>
+          </div>
+          <div className="group w-fit">
+            <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
+              <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
+                <img src={tailwind} alt="Figma Logo" className="w-12 h-12" />
+              </div>
+              <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
+                98%
+              </p>
+            </div>
+            <p className="text-purple-400 text-sm mt-1 text-center">
+              Tailwind CSS
+            </p>
+          </div>
+          <div className="group w-fit">
+            <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
+              <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
+                <img src={nx} alt="Figma Logo" className="w-12 h-12" />
+              </div>
+              <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
+                45%
+              </p>
+            </div>
+            <p className="text-purple-400 text-sm mt-1 text-center">Next JS</p>
+          </div>
+          <div className="group w-fit">
+            <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
+              <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
+                <img src={git} alt="Figma Logo" className="w-12 h-12" />
+              </div>
+              <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
+                91%
+              </p>
+            </div>
+            <p className="text-purple-400 text-sm mt-1 text-center">Github</p>
+          </div>
+          <div className="group w-fit">
+            <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
+              <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
+                <img src={boost} alt="Figma Logo" className="w-12 h-12" />
+              </div>
+              <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
+                98%
+              </p>
+            </div>
+            <p className="text-purple-400 text-sm mt-1 text-center">
+              Bootstrap
+            </p>
+          </div>
+          <div className="group w-fit">
+            <div className="bg-[#140C1C] transition-all duration-200 group-hover:bg-q group-hover:border-p border border-q  p-6 rounded-2xl shadow-lg flex flex-col items-center">
+              <div className="w-20 group-hover:grayscale-0 group-hover:scale-110 transition-scale duration-200 grayscale-100 h-20 rounded-full flex items-center justify-center">
+                <img src={types} alt="Figma Logo" className="w-12 h-12" />
+              </div>
+              <p className="text-gray-400 group-hover:text-purple-200 font-semibold mt-4">
+                20%
+              </p>
+            </div>
+            <p className="text-purple-400 text-sm mt-1 text-center">
+              TypeScript
+            </p>
           </div>
         </div>
       </section>

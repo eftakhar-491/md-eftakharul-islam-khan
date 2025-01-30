@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function Educations() {
   return (
     <>
-      <section className="bg-black w-full py-16">
+      <section id="about" className="bg-black w-full py-16">
         <div>
           <div className="font-Bela">
             <h1 className="gradient-text-heading text-4xl text-center font-semibold">

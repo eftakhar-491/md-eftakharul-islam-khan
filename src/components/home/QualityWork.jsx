@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router";
 
 export default function QualityWork() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
   return (
     <>
-      <section className=" bg-black py-16">
+      <section id="services" className=" bg-black py-16">
         <div className="font-Bela">
           <h1 className="gradient-text-heading text-4xl text-center font-semibold">
             My Quality Services

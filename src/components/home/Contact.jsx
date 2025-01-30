@@ -5,7 +5,7 @@ import { FiHome } from "react-icons/fi";
 export default function Contact() {
   return (
     <>
-      <section className="bg-black w-full py-16">
+      <section id="contact" className="bg-black w-full py-16">
         <div className="max-w-[1240px] flex items-center  mx-auto px-[5%]">
           <div className="w-1/2 bg-[#140C1C] p-10 rounded-2xl">
             <div className="font-Bela">

@@ -11,7 +11,7 @@ export default function Projects() {
   console.log(projects);
   return (
     <>
-      <section className=" py-16">
+      <section id="projects" className=" py-16">
         <div className="font-Bela">
           <h1 className="gradient-text-heading text-4xl text-center font-semibold">
             My Recent Projects

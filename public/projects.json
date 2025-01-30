@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Artifacts publication",
+    "name": "Chrono Craft",
     "description": "ChronoCraft is an application designed to showcase and provide detailed information about various artifacts.",
     "image": [
       "https://i.ibb.co.com/Xx4VMfJ/p1.jpg",
@@ -15,6 +15,8 @@
       "Authentication",
       "Feedback Form"
     ],
+    "startDate": "21/12/2024",
+    "endDate": "26/12/2024",
     "category": "Artifacts publication",
     "technologies": [
       "ReactJS",
