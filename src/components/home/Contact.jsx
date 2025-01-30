@@ -2,7 +2,27 @@ import { SiMinutemailer } from "react-icons/si";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { MdAlternateEmail } from "react-icons/md";
 import { FiHome } from "react-icons/fi";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 export default function Contact() {
+  const form = useRef();
+  const handelSendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        form.current,
+        import.meta.env.VITE_EMAIL_KEY
+      )
+      .then(
+        (result) => {},
+        (error) => {}
+      );
+
+    e.target.reset();
+  };
   return (
     <>
       <section id="contact" className="bg-black w-full py-16">
@@ -18,17 +38,21 @@ export default function Contact() {
                 do. Just simple like that!{" "}
               </p>
             </div>
-            <form className="font-Bela text-white gap-3 mt-5 flex flex-col">
+            <form
+              ref={form}
+              onSubmit={handelSendEmail}
+              className="font-Bela text-white gap-3 mt-5 flex flex-col"
+            >
               <input
                 className="border-gray-800 border outline-0 transition duration-300 focus:border-p bg-black p-2 pl-5 rounded-lg"
                 type="text"
-                name="name"
+                name="user_name"
                 placeholder="Name"
               />
               <input
                 className="border-gray-800 border outline-0 transition duration-300 focus:border-p bg-black p-2 pl-5 rounded-lg"
                 type="email"
-                name="email"
+                name="user_email"
                 placeholder="Email address"
               />
               <textarea
@@ -37,7 +61,10 @@ export default function Contact() {
                 rows="7"
                 placeholder="Message"
               ></textarea>
-              <button className="mt-3 text-center flex gap-2 items-center px-6 py-[6px] text-[16px] bg-gradient-to-r hover:from-q hover:to-p from-p to-q transition-colors duration-500  rounded-4xl cursor-pointer ">
+              <button
+                type="submit"
+                className="mt-3 text-center flex gap-2 items-center px-6 py-[6px] text-[16px] bg-gradient-to-r hover:from-q hover:to-p from-p to-q transition-colors duration-500  rounded-4xl cursor-pointer "
+              >
                 <SiMinutemailer /> Send email
               </button>
             </form>

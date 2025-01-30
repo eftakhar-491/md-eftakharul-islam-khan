@@ -5,14 +5,14 @@ export default function ProjectCard({ data }) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="group shadow-2xl relative overflow-hidden px-4 pt-7 rounded-t-2xl bg-[#140C1C]">
+      <div
+        onClick={() => navigate(`/project/${data?.id}`)}
+        className="group shadow-2xl relative overflow-hidden px-4 pt-7 rounded-t-2xl bg-[#140C1C]"
+      >
         <div className="px-3">
           <img className="w-full rounded-t-lg" src={data?.image[0]} alt="" />
         </div>
-        <div
-          onClick={() => navigate(`/project/${data?.id}`)}
-          className="cursor-pointer left-0 transition-all duration-250  bg-gradient-to-l p-4 w-full from-q to-p absolute group-hover:block -bottom-22 group-hover:bottom-0 text-white"
-        >
+        <div className="cursor-pointer left-0 transition-all duration-250  bg-gradient-to-l p-4 w-full from-q to-p absolute group-hover:block -bottom-22 group-hover:bottom-0 text-white">
           <h1 className=" text-2xl font-Bela flex items-center justify-between">
             {data?.name}
             <span>
