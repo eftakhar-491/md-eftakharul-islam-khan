@@ -8,23 +8,25 @@ import mypic from "../../assets/mypic.jpg";
 export default function Hero() {
   return (
     <>
-      <section className="max-w-[1240px] mx-auto relative  font-Bela min-h-[600px] flex items-center ">
+      <section className="max-w-[1240px] mx-auto relative  font-Bela py-20 flex items-center ">
         <div className="absolute w-80 h-80 bg-radial from-p/40 -top-44 -right-64 -z-50 to-transparent blur-3xl overflow-hidden rounded-full"></div>
 
         <h1
           style={{
             WebkitTextStroke: "0.6px #5a1899",
           }}
-          className="animate-zoomout font-Sura -z-50 font-extrabold text-transparent absolute text-[300px] top-1/2 left-1/2 -translate-x-[240px] -translate-y-1/2"
+          className="animate-zoomout font-Sura -z-50 font-extrabold text-transparent absolute text-[250px] md:text-[300px] top-1/2 left-1/2 -translate-x-1/2 md:-translate-x-[240px] -translate-y-[250px] md:-translate-y-1/2"
         >
           HI
         </h1>
-        <div className="flex items-center w-full text-white px-[5%]">
-          <div className="w-1/2">
+        <div className="flex md:flex-row flex-col items-center w-full text-white px-[5%]">
+          <div className="md:w-1/2">
             <h1>
-              <span className="text-4xl text-[#DDDDDD]">I am Eftakhar</span>
+              <span className="text-3xl md:text-4xl text-[#DDDDDD]">
+                I am Eftakhar
+              </span>
               <br />{" "}
-              <span className=" text-7xl">
+              <span className="text-5xl md:text-7xl">
                 <span className="gradient-text">Frontend Web</span>
                 <br />
                 <span className="gradient-text">Developer.</span>
@@ -85,9 +87,9 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 ">
+          <div className="md:w-1/2 mt-8 lg:mt-0">
             {" "}
-            <div className="relative  rotate-[5deg] overflow-hidden  hover:rotate-0 transition-all hover:border-2 duration-250 mx-auto w-[350px] h-[350px] rounded-3xl bg-[#111315] border-[0.4px] border-p">
+            <div className="relative   rotate-[5deg] overflow-hidden  hover:rotate-0 transition-all hover:border-2 duration-250 mx-auto md:w-[350px] w-[300px] h-[280px] md:h-[280px] rounded-3xl bg-[#111315] border-[0.4px] border-p">
               <img
                 src={mypic}
                 alt=""

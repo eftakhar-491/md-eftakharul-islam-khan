@@ -7,18 +7,18 @@ export default function Educations() {
       <section id="about" className="bg-black w-full py-16">
         <div>
           <div className="font-Bela">
-            <h1 className="gradient-text-heading text-4xl text-center font-semibold">
+            <h1 className="gradient-text-heading text-3xl md:text-4xl text-center font-semibold">
               About Me
             </h1>
 
-            <p className="text-sm text-white mx-auto text-center max-w-[550px] mt-2.5">
+            <p className="text-sm px-4 text-white mx-auto text-center max-w-[550px] mt-2.5">
               We put your ideas and thus your wishes in the form of a unique web
               project that inspires you and you customers.{" "}
             </p>
           </div>
-          <div className="max-w-[1240px] mt-5 px-[5%] mx-auto flex items-center text-white">
-            <div className="w-1/2">
-              <h1 className="gradient-text-heading font-semibold text-2xl font-Bela mb-3">
+          <div className="max-w-[1240px] mt-5 px-[5%] mx-auto flex lg:flex-row flex-col items-center text-white">
+            <div className="lg:w-1/2">
+              <h1 className="gradient-text-heading font-semibold text-xl md:text-2xl font-Bela mb-3">
                 I am, Md Eftakharul Islam Khan
               </h1>
               <p className="text-sm font-Bela text-gray-300 pr-4">
@@ -47,7 +47,7 @@ export default function Educations() {
                 always look for opportunities and accomplishments.
               </p>
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2 mt-3 lg:mt-0">
               <h1 className="gradient-text-heading   text-2xl font-Bela font-semibold">
                 Education Qualification
               </h1>

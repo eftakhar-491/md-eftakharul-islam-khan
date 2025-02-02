@@ -26,10 +26,10 @@ export default function Contact() {
   return (
     <>
       <section id="contact" className="bg-black w-full py-16">
-        <div className="max-w-[1240px] flex items-center  mx-auto px-[5%]">
-          <div className="w-1/2 bg-[#140C1C] p-10 rounded-2xl">
+        <div className="max-w-[1240px] flex flex-col-reverse lg:flex-row items-center  mx-auto px-[5%]">
+          <div className="lg:w-1/2 bg-[#140C1C] p-10 rounded-2xl">
             <div className="font-Bela">
-              <h1 className="gradient-text-heading text-4xl text-center font-semibold">
+              <h1 className="gradient-text-heading text-2xl md:text-4xl text-center font-semibold">
                 Let’s work together!
               </h1>
 
@@ -69,7 +69,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
-          <div className="text-white w-1/2 ml-10">
+          <div className="text-white lg:w-1/2 lg:ml-10 mb-5 lg:mb-0">
             <div className="flex mb-5 gap-5 items-center">
               <div className="w-fit flex gap-2 items-center px-3 py-3 text-[16px] bg-gradient-to-r hover:from-q hover:to-p from-p to-q transition-colors duration-500  rounded-4xl cursor-pointer ">
                 <MdOutlinePhoneInTalk />

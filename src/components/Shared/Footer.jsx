@@ -8,9 +8,13 @@ export default function Footer() {
       <footer className="pt-16 text-white">
         <div>
           <img className="max-w-[300px] mx-auto" src="/fav.png" alt="" />
-          <img className="max-w-[300px] mx-auto" src={sign} alt="" />
+          <img
+            className="max-w-[250px] md:max-w-[300px] mx-auto"
+            src={sign}
+            alt=""
+          />
 
-          <ul className="flex justify-center gap-4 my-5">
+          <ul className="flex flex-col md:flex-row items-center justify-center gap-4 my-5">
             <NavLink to="/">
               <li>Home</li>
             </NavLink>
