@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Educations from "./Educations";
+import Loading from "../Shared/Loading";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Educations />
       <Projects />
       <Contact />
+      {/* <Loading /> */}
     </>
   );
 }

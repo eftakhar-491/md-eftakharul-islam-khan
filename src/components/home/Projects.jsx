@@ -1,16 +1,28 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
+import Loading from "../Shared/Loading";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch("/projects.json")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
   console.log(projects);
+
+  useEffect(() => {
+    if (projects.length > 0) {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+      }, 900);
+      return () => clearTimeout(timeout);
+    }
+  }, [projects]);
   return (
     <>
+      {loading && <Loading data={projects} />}
       <section id="projects" className=" py-16">
         <div className="font-Bela">
           <h1 className="gradient-text-heading text-3xl md:text-4xl text-center font-semibold">

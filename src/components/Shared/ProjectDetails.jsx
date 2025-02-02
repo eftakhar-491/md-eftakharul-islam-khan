@@ -13,7 +13,9 @@ import bg from "../../assets/bg.png";
 import { data, Link, useParams } from "react-router";
 import { SiRefinedgithub } from "react-icons/si";
 import { IoServerSharp } from "react-icons/io5";
+import Loading from "./Loading";
 export default function ProjectDetails() {
+  const [loading, setLoading] = useState(true);
   const [slider, setSlider] = useState(2);
   const { id } = useParams();
   const [projects, setProjects] = useState([]);
@@ -31,9 +33,18 @@ export default function ProjectDetails() {
       setSlider(2);
     }
   }, []);
-  console.log(projects);
+  useEffect(() => {
+    if (projects.length > 0) {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+      }, 900);
+      return () => clearTimeout(timeout);
+    }
+  }, [projects]);
+
   return (
     <>
+      {loading && <Loading data={projects} />}
       <section className="bg-[#050709] w-full h-full">
         <div
           style={{
