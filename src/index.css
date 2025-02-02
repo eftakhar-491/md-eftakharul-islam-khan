@@ -81,7 +81,7 @@ html {
 }
 
 .loading-letter {
-  animation: scaleAnimation 1.2s linear infinite;
+  animation: scaleAnimation 1s linear infinite;
   display: inline-block;
 }
 .slide-up {
