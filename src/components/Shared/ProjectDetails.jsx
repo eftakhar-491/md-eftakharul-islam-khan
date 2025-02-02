@@ -14,6 +14,7 @@ import { data, Link, useParams } from "react-router";
 import { SiRefinedgithub } from "react-icons/si";
 import { IoServerSharp } from "react-icons/io5";
 export default function ProjectDetails() {
+  const [slider, setSlider] = useState(2);
   const { id } = useParams();
   const [projects, setProjects] = useState([]);
   console.log(id);
@@ -21,6 +22,14 @@ export default function ProjectDetails() {
     fetch("/projects.json")
       .then((res) => res.json())
       .then((data) => setProjects(data?.filter((i) => i?.id === parseInt(id))));
+  }, []);
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setSlider(1);
+      console.log(slider);
+    } else {
+      setSlider(2);
+    }
   }, []);
   console.log(projects);
   return (
@@ -47,15 +56,15 @@ export default function ProjectDetails() {
           </p>
         </div>
         <div className="max-w-[1240px] mx-auto px-[5%] mt-24 text-white">
-          <div className="bg-q p-12">
+          <div className="bg-q p-6 lg:p-12">
             <img
               className="w-full object-cover"
               src={projects[0]?.image[0]}
               alt=""
             />
           </div>
-          <div className="mt-10 flex justify-between ">
-            <div className="w-1/2">
+          <div className="mt-10 flex flex-col lg:flex-row justify-between ">
+            <div className="lg:w-1/2">
               <h1 className="text-3xl font-Bela font-semibold">
                 {projects[0]?.name}
               </h1>
@@ -64,6 +73,14 @@ export default function ProjectDetails() {
                 <span>{projects[0]?.endDate}</span>
               </p>
               <p> {projects[0]?.description}</p>
+              {projects[0]?.credential?.email && (
+                <p className="font-Bela mt-3">
+                  <h2 className="text-xl">Credential:</h2>
+                  <span>Email: {projects[0]?.credential?.email}</span>
+                  <br />{" "}
+                  <span>Password: {projects[0]?.credential?.password}</span>
+                </p>
+              )}
               <div className="flex gap-3 mt-5">
                 <Link to={projects[0]?.url} target="_blank">
                   <button className="flex gap-2 items-center px-6 py-[6px] text-[16px] bg-gradient-to-r hover:from-q hover:to-p from-p to-q transition-colors duration-500  rounded-4xl cursor-pointer ">
@@ -101,7 +118,7 @@ export default function ProjectDetails() {
                 )}
               </div>
             </div>
-            <div className="w-1/2 h-full">
+            <div className="lg:w-1/2 mt-4 lg:mt-0 h-full">
               <div className="">
                 <h2 className="text-xl font-semibold font-Bela">
                   Technologies
@@ -147,7 +164,7 @@ export default function ProjectDetails() {
               delay: 2500,
               disableOnInteraction: false,
             }}
-            slidesPerView={2}
+            slidesPerView={slider}
             spaceBetween={30}
             loop={true}
             pagination={{

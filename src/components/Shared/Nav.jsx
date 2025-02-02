@@ -30,13 +30,10 @@ export default function Nav() {
               <img className="h-[36px] md:h-[50px]" src={signeture} alt="" />
             </span>{" "}
           </h1>
-          <span
-            className="cursor-pointer lg:hidden flex items-center gap-2"
-            onClick={() => setMenu((p) => !p)}
-          >
+          <span className="cursor-pointer lg:hidden flex items-center gap-2">
             <Link
               target="_blank"
-              to="https://drive.google.com/file/d/1TjQ8dcd5N0FOChxJPeRaPemnRjsv73Fj/view?usp=sharing"
+              to="https://drive.google.com/file/d/1EwdL-gI1sHILFVjrOfYskTs7unV4HO6s/view?usp=sharing"
             >
               <button className="flex gap-2 items-center px-4 w-full py-[6px] text-[12px] bg-gradient-to-r hover:from-q hover:to-p from-p to-q transition-colors duration-500  rounded-4xl cursor-pointer ">
                 <svg
@@ -56,20 +53,22 @@ export default function Nav() {
                 Download CV
               </button>
             </Link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-              />
-            </svg>
+            <span onClick={() => setMenu((p) => !p)}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                />
+              </svg>
+            </span>
           </span>
           {menu && (
             <ul

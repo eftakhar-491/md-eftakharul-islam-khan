@@ -8,7 +8,7 @@ import mypic from "../../assets/mypic.jpg";
 export default function Hero() {
   return (
     <>
-      <section className="max-w-[1240px] mx-auto relative  font-Bela py-20 flex items-center ">
+      <section className="max-w-[1240px] mx-auto relative lg:min-h-[600px] font-Bela py-20 flex items-center ">
         <div className="absolute w-80 h-80 bg-radial from-p/40 -top-44 -right-64 -z-50 to-transparent blur-3xl overflow-hidden rounded-full"></div>
 
         <h1
@@ -20,7 +20,7 @@ export default function Hero() {
           HI
         </h1>
         <div className="flex md:flex-row flex-col items-center w-full text-white px-[5%]">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 lg:pl-3">
             <h1>
               <span className="text-3xl md:text-4xl text-[#DDDDDD]">
                 I am Eftakhar
@@ -40,7 +40,7 @@ export default function Hero() {
               <Link
                 target="_blank"
                 to={
-                  "https://drive.google.com/file/d/1TjQ8dcd5N0FOChxJPeRaPemnRjsv73Fj/view?usp=sharing"
+                  "https://drive.google.com/file/d/1EwdL-gI1sHILFVjrOfYskTs7unV4HO6s/view?usp=sharing"
                 }
               >
                 <button className="text-[#AE8DF2] hover:text-white text-sm flex gap-2 items-center px-6 py-[8px] bg-q border border-p hover:bg-p rounded-4xl cursor-pointer ">

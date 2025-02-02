@@ -1,6 +1,48 @@
 [
   {
     "id": 1,
+    "name": "ScholarSphere",
+    "description": "The Scholarship Management System is a full-stack web application designed to streamline scholarship applications and administration. It features role-based access control, ensuring secure and efficient management for students, admins, and reviewers. With authentication and authorization, users can securely apply, review, and manage scholarships. The system enhances transparency, efficiency, and accessibility in the scholarship process.",
+    "image": [
+      "https://i.ibb.co.com/pjbS3yzZ/ssq1.jpg",
+      "https://i.ibb.co.com/bfhSzzH/sss2.jpg",
+      "https://i.ibb.co.com/mV4yQNGL/sssc33.jpg"
+    ],
+    "credential": {
+      "email": "admin@admin.com",
+      "password": "Admin@"
+    },
+    "url": "https://scholar-sphere-system.web.app/",
+    "keyFeatures": [
+      "User Authentication",
+      "Scholarship Listings",
+      "Application Management",
+      "Admin Dashboard",
+      "Responsive Design",
+      "Interactive UI"
+    ],
+    "startDate": "21/12/2024",
+    "endDate": "26/12/2024",
+    "category": "Scholarship Management",
+    "technologies": [
+      "ReactJS",
+      "JavaScript",
+      "nodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Firebase"
+    ],
+    "gitRepoClient": "https://github.com/eftakhar-491/B-10_Assignment-12-Client",
+    "gitRepoServer": "https://github.com/eftakhar-491/B-10_Assignment-12-Server",
+    "whatToImprove": [
+      "Improve User Roles Explanation",
+      "Add More Features",
+      "Add Automation Aspects",
+      "Enhance Usability Focus"
+    ]
+  },
+  {
+    "id": 2,
     "name": "Chrono Craft",
     "description": "ChronoCraft is an application designed to showcase and provide detailed information about various artifacts.",
     "image": [
@@ -15,8 +57,8 @@
       "Authentication",
       "Feedback Form"
     ],
-    "startDate": "21/12/2024",
-    "endDate": "26/12/2024",
+    "startDate": "12/11/2024",
+    "endDate": "28/11/2024",
     "category": "Artifacts publication",
     "technologies": [
       "ReactJS",
@@ -26,11 +68,12 @@
       "MongoDB",
       "Firebase"
     ],
-    "gitRepo": "https://github.com/eftakhar-491/B-10_Assignment-11",
+    "gitRepoClient": "https://github.com/eftakhar-491/Artifacts-B-10-A-11-client",
+    "gitRepoServer": "https://github.com/eftakhar-491/ChronoCraft-Server",
     "whatToImprove": ["Add a admin accept features", "user profile"]
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Visa Consultancy",
     "category": "Visa Consultancy",
     "description": "A Visa Consultancy website is a professional online platform designed to assist individuals and businesses with visa-related services and immigration processes. It typically serves as a one-stop destination for providing detailed information, expert guidance, and end-to-end support in obtaining various types of visas such as student visas, work permits, tourist visas, family visas, or business visas.",
@@ -39,6 +82,8 @@
       " https://i.ibb.co.com/6w4m1XG/p5.jpg",
       " https://i.ibb.co.com/92Jjcbw/p6.jpg"
     ],
+    "startDate": "28/10/2024",
+    "endDate": "5/11/2024",
     "url": "https://b-10-assignment-10.web.app/",
     "keyFeatures": [
       "Responsive Design",
@@ -49,20 +94,19 @@
     "technologies": [
       "ReactJS",
       "JavaScript",
-
       "ExpressJS",
       "MongoDB",
       "Firebase"
     ],
-    "gitRepo": "https://github.com/eftakhar-491/Batch-10-Assignment-10",
+    "gitRepoClient": "https://github.com/eftakhar-491/Batch-10-Assignment-10",
     "whatToImprove": [
       "Add a admin accept features",
       "user profile",
-      "Easy apply"
+      "Easy apply method"
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Vocabulary Learning",
     "description": "A French Vocabulary website is an interactive online platform designed to help learners of all levels expand their knowledge of the French language. The website serves as a comprehensive resource for mastering French vocabulary, pronunciation, and usage through engaging and structured content.",
     "image": [
@@ -70,16 +114,18 @@
       "https://i.ibb.co.com/x1zsG9H/p8.jpg",
       "https://i.ibb.co.com/gDN6WBt/p9.jpg"
     ],
+    "startDate": "5/9/2024",
+    "endDate": "20/9/2024",
     "category": "Vocabulary Learning",
     "url": "https://b-10-assignment-9.web.app/",
     "keyFeatures": [
       "Responsive Design",
       "CURD Operation",
       "Authentication",
-      "Feedback Form"
+      "Learn words with pronunciation"
     ],
     "technologies": ["ReactJS", "JavaScript", "Firebase"],
-    "gitRepo": "https://github.com/eftakhar-491/Batch-10-Assignment-9",
+    "gitRepoClient": "https://github.com/eftakhar-491/Batch-10-Assignment-9",
     "whatToImprove": ["serverSide", "user profile"]
   }
 ]

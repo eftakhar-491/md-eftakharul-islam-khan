@@ -30,11 +30,12 @@ export default function QualityWork() {
             <h2 className="text-p group-hover:text-white text-xl font-Bela self-center">
               01
             </h2>
-            <h1 className="text-3xl font-Bela self-center">Web Development</h1>
+            <h1 className="text-3xl font-Bela self-center">MERN Stack Dev.</h1>
             <p className="text-sm self-center font-Bela">
-              Ensure your website looks great on any device,with layouts that
-              adapt to different screen sizes seamlessly. Ensure your website n
-              sizes seamlessly.
+              I develop full-stack web applications using the MERN stack,
+              ensuring seamless integration between frontend and backend. My
+              focus is on performance, scalability, and user experience,
+              delivering dynamic and responsive applications.
             </p>
             <span className="text-p lg:mt-0 mt-2 group-hover:text-white self-center font-extrabold">
               <svg
@@ -55,13 +56,17 @@ export default function QualityWork() {
           </div>
           <div className=" transition-bg duration-500 px-5 cursor-pointer hover:bg-p border-b border-q py-4 group grid gap-1 lg:gap-5 lg:grid-cols-[25px_300px_1fr_30px]">
             <h2 className="text-p group-hover:text-white text-xl font-Bela self-center">
-              01
+              02
             </h2>
-            <h1 className="text-3xl font-Bela self-center">Web Development</h1>
+            <h1 className="text-3xl font-Bela self-center">
+              Frontend Web Dev.
+            </h1>
             <p className="text-sm self-center font-Bela">
-              Ensure your website looks great on any device,with layouts that
-              adapt to different screen sizes seamlessly. Ensure your website n
-              sizes seamlessly.
+              I specialize in building interactive, user-friendly, and visually
+              appealing web interfaces. Using modern frameworks and best
+              practices, I ensure seamless performance, responsiveness, and
+              accessibility across all devices. My focus is on creating engaging
+              experiences that enhance usability and functionality.
             </p>
             <span className="text-p lg:mt-0 mt-2 group-hover:text-white self-center font-extrabold">
               <svg
@@ -82,13 +87,15 @@ export default function QualityWork() {
           </div>
           <div className=" transition-bg duration-500 px-5 cursor-pointer hover:bg-p border-b border-q py-4 group grid gap-1 lg:gap-5 lg:grid-cols-[25px_300px_1fr_30px]">
             <h2 className="text-p group-hover:text-white text-xl font-Bela self-center">
-              01
+              03
             </h2>
-            <h1 className="text-3xl font-Bela self-center">Web Development</h1>
+            <h1 className="text-3xl font-Bela self-center">
+              Responsive & On-Time Delivery
+            </h1>
             <p className="text-sm self-center font-Bela">
-              Ensure your website looks great on any device,with layouts that
-              adapt to different screen sizes seamlessly. Ensure your website n
-              sizes seamlessly.
+              I create websites that adapt flawlessly to all devices, ensuring a
+              smooth user experience. My workflow is efficient, guaranteeing
+              high-quality results within deadlines.
             </p>
             <span className="text-p lg:mt-0 mt-2 group-hover:text-white self-center font-extrabold">
               <svg

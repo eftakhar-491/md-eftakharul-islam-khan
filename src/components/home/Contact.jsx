@@ -44,18 +44,21 @@ export default function Contact() {
               className="font-Bela text-white gap-3 mt-5 flex flex-col"
             >
               <input
+                required
                 className="border-gray-800 border outline-0 transition duration-300 focus:border-p bg-black p-2 pl-5 rounded-lg"
                 type="text"
                 name="user_name"
                 placeholder="Name"
               />
               <input
+                required
                 className="border-gray-800 border outline-0 transition duration-300 focus:border-p bg-black p-2 pl-5 rounded-lg"
                 type="email"
                 name="user_email"
                 placeholder="Email address"
               />
               <textarea
+                required
                 className="border-gray-800 border outline-0 transition duration-300 focus:border-p bg-black p-2 pl-5 rounded-lg"
                 name="message"
                 rows="7"
