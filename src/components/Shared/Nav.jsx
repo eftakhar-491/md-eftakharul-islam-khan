@@ -127,7 +127,7 @@ export default function Nav() {
             </NavLink>
             <Link
               target="_blank"
-              to="https://drive.google.com/file/d/1TjQ8dcd5N0FOChxJPeRaPemnRjsv73Fj/view?usp=sharing"
+              to="https://drive.google.com/file/d/1EwdL-gI1sHILFVjrOfYskTs7unV4HO6s/view?usp=sharing"
             >
               <button className="flex gap-2 items-center px-6 py-[6px] text-[16px] bg-gradient-to-r hover:from-q hover:to-p from-p to-q transition-colors duration-500  rounded-4xl cursor-pointer ">
                 <svg

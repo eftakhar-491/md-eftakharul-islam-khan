@@ -58,10 +58,10 @@ export default function ProjectDetails() {
           <h1 className=" text-3xl font-Bela font-semibold text-white">
             {projects[0]?.name}
           </h1>
-          <p className="text-sm mx-auto max-w-[600px] px-4 text-center text-white/70 ">
+          {/* <p className="text-sm mx-auto max-w-[600px] px-4 text-center text-white/70 ">
             {" "}
             A Scholarship Management Systen
-          </p>
+          </p> */}
           <p className="text-white mt-5 text-sm font-Bela">
             Home {">"} Projects {">"} {projects[0]?.category}
           </p>
