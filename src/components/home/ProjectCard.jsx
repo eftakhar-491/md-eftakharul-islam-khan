@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router";
 
 export default function ProjectCard({ data }) {
   const navigate = useNavigate();
-  console.log(data);
+
   return (
     <>
       <div className="group shadow-2xl relative overflow-hidden px-4 pt-7 rounded-t-2xl bg-[#140C1C]">
